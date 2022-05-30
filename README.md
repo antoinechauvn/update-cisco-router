@@ -87,7 +87,7 @@ File Systems:
 ### Étape 4 : Préparez la mise à niveau
 Vous devriez considérer ces éléments avant que vous amélioriez le Cisco IOS :
 
-* Si le routeur dispose de suffisamment de mémoire (flash, emplacement ou disque), vous pouvez stocker à la fois l'ancien Cisco IOS et le nouveau Cisco IOS.<br>Vous pouvez démarrer le routeur en mode ROMMON et démarrer l'ancien Cisco IOS en cas d'échec de démarrage avec le nouveau Cisco IOS. Cette méthode permet de gagner du temps si vous devez restaurer le Cisco IOS.
+* Si le routeur dispose de suffisamment de mémoire (flash, emplacement ou disque), vous pouvez stocker à la fois l'ancien Cisco IOS et le nouveau Cisco IOS.<br>Vous pouvez démarrer le routeur en mode ROMMON et démarrer l'ancien Cisco IOS en cas d'échec de démarrage avec le nouveau Cisco IOS. Cette méthode permet de gagner du temps si vous devez restaurer l'IOS.
 
 * Sauvegardez la configuration du routeur car certaines versions de Cisco IOS ajoutent des configurations par défaut.<br>Cette configuration nouvellement ajoutée peut entrer en conflit avec votre configuration actuelle.
 
