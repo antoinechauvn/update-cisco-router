@@ -67,7 +67,7 @@ Enter configuration commands, one per line.  End with CNTL/Z.
 2600(config)#^Z
 ```
 
-### Étape 7 : Vérifiez la variable de démarrage
+### Étape 7 : Activation du nouveau IOS au démarrage
 Si le premier fichier dans la flash n'est pas l'image logicielle de Cisco IOS, mais un fichier de configuration, ou quelque chose d'autre, alors vous devez configurer une déclaration de système de démarrage afin de démarrer l'image spécifiée.<br>
 Sinon, le routeur essaie de démarrer avec le fichier de configuration ou le premier fichier du Flash, ce qui ne fonctionne pas. S'il n'y a qu'un seul fichier dans le Flash et qu'il s'agit de l'image du logiciel Cisco IOS, cette étape n'est pas nécessaire.
 
