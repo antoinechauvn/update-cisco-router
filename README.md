@@ -1,6 +1,9 @@
 # update-cisco-router
 Mise à jour d'un routeur Cisco
 
+![image](https://user-images.githubusercontent.com/83721477/171003092-e5a74061-1289-4ecd-917f-54e9972573a9.png)
+
+
 ### Étape 1 : sélectionnez une image logicielle Cisco IOS
 La première étape de la procédure de mise à niveau consiste à sélectionner la version correcte du logiciel Cisco IOS et l'ensemble de fonctionnalités. Cette étape est très importante, et ces facteurs peuvent affecter la décision pour laquelle Cisco IOS vous devez sélectionner :
 
