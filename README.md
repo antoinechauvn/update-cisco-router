@@ -76,3 +76,37 @@ Enter configuration commands, one per line.  End with CNTL/Z.
 2600(config)#boot system flash:c2600-adventerprisek9-mz.124-12.bin
 2600(config)#^Z
 ```
+
+### Étape 8 : Sauvegardez la configuration et rechargez le routeur
+
+```
+2600# write memory
+2610# reload
+Proceed with reload? [confirm]
+Jan 24 20:17:07.787: %SYS-5-RELOAD: Reload requested by console. Reload Reason:
+Reload Command.
+```
+
+### Étape 9 : Vérifiez la mise à niveau de l'IOS
+Vérifiez que le routeur fonctionne avec l'image appropriée.
+
+Une fois le rechargement terminé, le routeur doit exécuter l'image logicielle Cisco IOS souhaitée.<br>
+Utilisez la commande `show version` afin de vérifier le logiciel Cisco IOS.
+
+```
+2600#show version
+00:22:25: %SYS-5-CONFIG_I: Configured from console by console
+Cisco IOS Software, C2600 Software (C2600-ADVENTERPRISEK9-M), Version 12.4(12),
+RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2006 by Cisco Systems, Inc.
+Compiled Fri 17-Nov-06 11:18 by prod_rel_team
+
+ROM: System Bootstrap, Version 12.2(8r) [cmong 8r], RELEASE SOFTWARE (fc1)
+
+2610 uptime is 22 minutes
+System returned to ROM by reload
+System image file is "flash:c2600-adventerprisek9-mz.124-12.bin"
+```
+
+
