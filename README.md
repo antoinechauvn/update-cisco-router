@@ -2,6 +2,7 @@
 Mise à jour d'un routeur Cisco
 
 ![image](https://user-images.githubusercontent.com/83721477/171003092-e5a74061-1289-4ecd-917f-54e9972573a9.png)
+![image](https://user-images.githubusercontent.com/83721477/171003562-eb9ffbe1-d058-49c6-8ad9-cf176a5121d6.png)
 
 
 ### Étape 1 : sélectionnez une image logicielle Cisco IOS
