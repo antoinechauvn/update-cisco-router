@@ -22,7 +22,64 @@ Le type de système de fichiers "flash" ou "disk" est utilisé pour stocker l'im
 La commande `show file system` affiche la liste des systèmes de fichiers disponibles sur le routeur.<br>
 Les systèmes de fichiers « disque/flash » communs pris en charge dans les routeurs Cisco ont des préfixes tels que flash :, slot0 :, slot1 :, disk0 : et disk1 :.<br>
 Il doit disposer de suffisamment d'espace pour stocker l'image Cisco IOS.<br>
-Vous pouvez utiliser le système de fichiers show ou la commande dir file_system afin de trouver l'espace libre.
+
+Vous pouvez utiliser le système de fichiers `show file system` ou la commande `dir file_system` afin de trouver l'espace libre.
+2600#show file system
+File Systems:
+
+     Size(b)     Free(b)      Type  Flags  Prefixes
+           -           -    opaque     rw   archive:
+           -           -    opaque     rw   system:
+       29688       20571     nvram     rw   nvram:
+           -           -    opaque     rw   null:
+           -           -   network     rw   tftp:
+           -           -    opaque     ro   xmodem:
+           -           -    opaque     ro   ymodem:
+*   49807356    20152636     flash     rw   flash:
+           -           -    opaque     wo   syslog:
+
+2800#show file system
+File Systems:
+
+     Size(b)     Free(b)      Type  Flags  Prefixes
+           -           -    opaque     rw   archive:
+           -           -    opaque     rw   system:
+           -           -    opaque     rw   null:
+           -           -   network     rw   tftp:
+           -           -    opaque     ro   xmodem:
+           -           -    opaque     ro   ymodem:
+*   64016384    15470592      disk     rw   flash:#
+      245752      239218     nvram     rw   nvram:
+           -           -    opaque     wo   syslog:
+ 
+3600#show file system
+File Systems:
+
+     Size(b)     Free(b)      Type  Flags  Prefixes
+           -           -    opaque     rw   archive:
+           -           -    opaque     rw   system:
+      129016      126071     nvram     rw   nvram:
+           -           -    opaque     rw   null:
+           -           -   network     rw   tftp:
+*   33030140    20511708     flash     rw   flash:
+    16777212    16777212     flash     rw   slot0:
+    16515068     8038516     flash     rw   slot1:
+           -           -    opaque     rw   xmodem:
+           -           -    opaque     rw   ymodem:
+3700#show file system
+File Systems:
+
+     Size(b)     Free(b)      Type  Flags  Prefixes
+           -           -    opaque     rw   archive:
+           -           -    opaque     rw   system:
+       57336       51389     nvram     rw   nvram:
+           -           -    opaque     rw   null:
+           -           -   network     rw   tftp:
+           -           -    opaque     ro   xmodem:
+           -           -    opaque     ro   ymodem:
+*   63881216    22765568      disk     rw   flash:#
+    31932416    31932416      disk     rw   slot0:#
+           -           -    opaque     wo   syslog:
 
 ### Étape 4 : Préparez la mise à niveau
 Vous devriez considérer ces éléments avant que vous amélioriez le Cisco IOS :
