@@ -24,6 +24,8 @@ Les systèmes de fichiers « disque/flash » communs pris en charge dans les rou
 Il doit disposer de suffisamment d'espace pour stocker l'image Cisco IOS.<br>
 
 Vous pouvez utiliser le système de fichiers `show file system` ou la commande `dir file_system` afin de trouver l'espace libre.
+
+```
 2600#show file system
 File Systems:
 
@@ -80,6 +82,7 @@ File Systems:
 *   63881216    22765568      disk     rw   flash:#
     31932416    31932416      disk     rw   slot0:#
            -           -    opaque     wo   syslog:
+```
 
 ### Étape 4 : Préparez la mise à niveau
 Vous devriez considérer ces éléments avant que vous amélioriez le Cisco IOS :
