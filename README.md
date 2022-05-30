@@ -14,7 +14,8 @@ La première étape de la procédure de mise à niveau consiste à sélectionner
 ### Étape 2 : Téléchargez l'image du logiciel Cisco IOS
 
 ### Étape 3 : Identifiez le système de fichiers pour copier l'image
-Le type de système de fichiers "flash" ou "disk" est utilisé pour stocker l'image Cisco IOS. La sortie de la commande `show file system` affiche la liste des systèmes de fichiers disponibles sur le routeur. Les systèmes de fichiers « disque/flash » communs pris en charge dans les routeurs Cisco ont des préfixes tels que flash :, slot0 :, slot1 :, disk0 : et disk1 :. Il doit disposer de suffisamment d'espace pour stocker l'image Cisco IOS.<br>
+Le type de système de fichiers "flash" ou "disk" est utilisé pour stocker l'image Cisco IOS.<br>
+La commande `show file system` affiche la liste des systèmes de fichiers disponibles sur le routeur. Les systèmes de fichiers « disque/flash » communs pris en charge dans les routeurs Cisco ont des préfixes tels que flash :, slot0 :, slot1 :, disk0 : et disk1 :. Il doit disposer de suffisamment d'espace pour stocker l'image Cisco IOS.<br>
 Vous pouvez utiliser le système de fichiers show ou la commande dir file_system afin de trouver l'espace libre.
 
 ### Étape 4 : Préparez la mise à niveau
